@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Switch,Route} from 'react-router-dom';
+import Navs from './components/Navs.js'
+import Home from './pages/Home'
+import Starred from './pages/Starred'
+import MainPageLayout from './components/MainPageLayout'
+import Show from './pages/Show'
+import { ThemeProvider } from 'styled-components'
+
+const theme = {
+  mainColors: {
+    blue: '#2400ff',
+    gray: '#c6c6c6',
+    dark: '#353535',
+  },
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+    <Switch>
+       <Route path='/' exact><Home/></Route>
+       <Route path='/starred' exact><Starred/></Route>
+       <Route path='/show/:id' exact><Show/></Route>
+       <Route>404 Page</Route>
+    </Switch>
+    </ThemeProvider>
   );
 }
 
