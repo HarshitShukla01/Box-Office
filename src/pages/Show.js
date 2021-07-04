@@ -1,4 +1,4 @@
-import React,{useEffect,useState,useReducer} from 'react'
+import React,{useEffect,useReducer} from 'react'
 import {useParams} from 'react-router-dom';
 import {apiGet} from '../misc/Config';
 import Cast from '../components/show/Cast'

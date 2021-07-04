@@ -1,9 +1,7 @@
 import React from 'react';
 import {Switch,Route} from 'react-router-dom';
-import Navs from './components/Navs.js'
 import Home from './pages/Home'
 import Starred from './pages/Starred'
-import MainPageLayout from './components/MainPageLayout'
 import Show from './pages/Show'
 import { ThemeProvider } from 'styled-components'
 
