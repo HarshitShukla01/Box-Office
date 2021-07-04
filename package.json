@@ -1,8 +1,8 @@
 {
-  "homepage": "https://HarshitShukla01.github.io/Box-Office",
   "name": "box-office",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://HarshitShukla01.github.io/Box-Office",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

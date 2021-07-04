@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{memo} from 'react';
 import {Switch,Route} from 'react-router-dom';
 import Home from './pages/Home'
 import Starred from './pages/Starred'
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);
